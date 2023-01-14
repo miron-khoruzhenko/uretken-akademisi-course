@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.bigred {
+  font-size: 20px;
+  color: red;
+}
+
+/* end of file */
+html {
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: rgb(232, 190, 82);
+  background: linear-gradient(90deg, rgb(232, 190, 82) 0%, rgb(200, 62, 92) 49%, rgb(178, 38, 170) 100%);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 1px;
+  -webkit-box-shadow: 0px 0px 24px -3px #808080;
+  -moz-box-shadow: 0px 0px 24px -3px #808080;
+  box-shadow: 0px 0px 24px -3px #808080;
+}
+@media (max-width: 566px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 567px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  width: min-content;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+}
+.grid__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #dadada;
+  border-radius: 1rem;
+  background: center no-repeat;
+  background-size: cover;
+  transition: 0.1s linear;
+  transition-property: transform, box-shadow;
+}
+.grid__img:hover {
+  transform: scale(1.05);
+  -webkit-box-shadow: 0px 0px 18px -3px #808080;
+  -moz-box-shadow: 0px 0px 18px -3px #808080;
+  box-shadow: 0px 0px 18px -3px #808080;
+}
+@media (max-width: 320px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 321px) and (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .grid__img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 992px) {
+  .grid__img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 2rem 0;
+}
+h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 8rem;
+  position: absolute;
+  top: 100;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 1rem 0;
+  background-color: #2f2f2f;
+}
+
+.viewer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.viewer__section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 45rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.viewer__section__img-block {
+  height: 22rem;
+  width: 22rem;
+  border: #808080 1px solid;
+  background-color: #2f2f2f;
+  background: center no-repeat;
+  background-size: cover;
+}
+.viewer__section .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .viewer {
+    background-color: red;
+    display: none !important;
+  }
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import "src/zero";
+@import "src/loader";
+@import "src/waves.css";
+
+body{
+	position: relative;
+
+	height: 100vh;
+	width: 100vw;
+	
+	background-color: #ff958e;
+
+	font-family: 'Lato', sans-serif;
+
+	color: #fff;
+}
+
+section{
+	position: relative;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	min-height: 25rem;
+	
+	// padding: 6.25rem 20vw; 
+}
+
+.pink{
+	background-color: #ff958e;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	
+	h1{
+		font-weight: 700;
+		font-size: 3rem;
+		text-align: center;
+		z-index: 100;
+		margin-bottom: 1rem;
+	}
+	p{
+		font-size: 1.5rem;
+		text-align: center;
+
+		z-index: 100;
+
+	}
+}
+
+.top{
+
+	top: 0;
+}
+
+.spacer{
+	position: absolute;
+	
+	left: 0;
+	// aspect-ratio: 960/300;
+	aspect-ratio: 1300/300;
+	width: 100%;
+	background: no-repeat center;
+	background-size: cover;
+}
+
+.layer1{
+	background-image: url('./src/waves-bg4.svg');
+}
+
+.flip{
+	transform: rotate(180deg);
+	bottom: 0;
+	left: 0;
+}
+
+.hidden{
+	display: none;
+}
+
+.blob-motion{
+	position: absolute;
+	// transform: translateY(-20%);
+}
+

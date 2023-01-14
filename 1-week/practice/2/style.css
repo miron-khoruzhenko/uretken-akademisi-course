@@ -1,0 +1,47 @@
+body{
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,100,0,1) 100%); 
+
+	/* color: #fff; */
+}
+li{text-decoration: underline;}
+
+li:nth-child(1){
+	color: red;
+}
+li:nth-child(2){
+	color:orange;
+}
+li:nth-child(3){
+	color:yellow;
+}
+li:nth-child(4){
+	color: green;
+}
+li:nth-child(5){
+	color: blue;
+}
+
+
+
+h1{
+	background-color: aliceblue;
+	color: blue;
+}
+h2{
+	background-color: red;
+	color: orange;
+}
+label{
+	display: inline-block;
+}
+
+label:nth-of-type(1){
+	background-color: cadetblue;
+}
+label:nth-of-type(2){
+	background-color: indigo;
+}
+label:nth-of-type(3){
+	background-color: rosybrown;
+}
