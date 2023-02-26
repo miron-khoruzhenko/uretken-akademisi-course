@@ -19,8 +19,9 @@ export default class App extends Component {
           this.setState({
             loaded : true,
             users : response});
-            },
-          error => console.log(error))
+          },
+          error => console.log(error)
+        )
   }
 
   HideOnLoad(props){
