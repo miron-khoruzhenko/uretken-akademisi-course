@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import { faMoon, faSun, faUser } from '@fortawesome/free-regular-svg-icons'
 
-const ColorModeSwither = (props) =>{
+const ColorModeSwitcher = (props) =>{
 	
 	return (
 		<label className="w-[52px] h-[30px] relative inline-block">
@@ -83,7 +83,7 @@ export const Navbar = (props) => {
 			{/* color switcher and user icon */}
 			<ul className='flex items-center space-x-1'>
 				<li>
-					<ColorModeSwither setDarkMode={props.setDarkMode} darkMode={props.darkMode}/>
+					<ColorModeSwitcher setDarkMode={props.setDarkMode} darkMode={props.darkMode}/>
 				</li>
 				<li className={`text-black aspect-square h-[22px] text-sm rounded-full text-center bg-white cursor-pointer`}>
 					<FontAwesomeIcon icon={faUser}/>
